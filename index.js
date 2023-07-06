@@ -1,3 +1,4 @@
+//Function to converter decimalToBinary
 var binary = (num) => {
     let number = num
     let binary = ''
@@ -9,21 +10,18 @@ var binary = (num) => {
             binary += number
         }
     }
-
     let binaryum = ''
 
 for (let i = binary.length-1;i>=0;i--) {
     binaryum += binary[i]
-    
 }
 binary = null
-    
     return binaryum
 }
+console.log(binary(101))
 
-console.log(binary(12))
-
-
+//Function to converter binary to Decimal
+//you can use converterBinaryToDecimal(binary(101)) or converterBinaryToDecimal('1100101') and program show you the same answer
 function converterBinaryToDecimal (num) {
     let x = 0
     let decimal = 0
@@ -33,4 +31,4 @@ function converterBinaryToDecimal (num) {
     }
     return decimal
 }
-    console.log (converterBinaryToDecimal(binary(5)))
+    console.log (converterBinaryToDecimal('1100101'))
